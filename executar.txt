@@ -1,0 +1,8 @@
+1. Baixe todas as dependências: npm i
+2. Rode a API: npm run dev
+3. Faça o pull da imagem do postgres: docker pull postgres 
+3. Crie o container do postgres através do: docker run --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+4. Abra o seu SGBD e utilize as seguintes configurações nele: Host - localhost , Port - 5432 , User -  postgres , Password - mysecretpassword .
+5. Execute os códigos presentes no arquivo schema.sql na query do seu SGBD.
+6. Abra o seu Power BI e utilize as seguintes configurações nele: server - localhost , database - connecting_db , Data Connectivity - import , User Name - postgres , Password - mysecretpassword
+Obs. Certifique-se que a porta 5432 não está sendo usada, pois o Postgres só usa ela. 
